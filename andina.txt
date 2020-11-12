@@ -1,0 +1,41 @@
+https://paiza.io/projects/7l6vQKcl_Sdhbgeb4zoOqw   Link para probar los codigos
+
+
+1. Ordenamiento de vectores
+
+$valores = array();
+$max_num = 100;
+
+for ($x=0;$x<$max_num;$x++) {
+  $num_aleatorio = rand(1,100000);
+  array_push($valores,$num_aleatorio);
+}
+arsort($valores);
+print_r($valores);
+?>
+
+-----------------------------------------------------
+
+a.	Potenciación_sumas.ext
+
+---------------------------------------------------
+<?php
+// Your code here!
+$base =25;
+//$base = readline();
+$exponente =5;
+//$exponente = readline();
+//$var=$base*$exponente;
+
+$x=0;
+
+do {
+   $basetotal=$base+$base;
+    $basetotal=$base+$basetotal;
+    $x++;
+   
+} while ($x<$exponente);
+ print_r($basetotal);
+
+
+?>
