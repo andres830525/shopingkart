@@ -22,7 +22,7 @@
 
 
                     <div class="col-6">
-                        <<img src="{{$product->photo}}" width="300" height="450">
+                        <img src="{{$product->photo}}" width="150" height="250">
                             <h4> {{$product->name}}</h4>
                             <p>{{Str::limit(strtolower($product->description),50)}} </p>
                             <p><strong>Precio: </strong>{{$product->price}}</p>
