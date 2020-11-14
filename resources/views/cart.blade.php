@@ -7,7 +7,7 @@
             <div class="card">
                 <div class="card-header">{{ __('Carrito de compras') }}</div>
 
-                 <a href="{{url('products') }}" class="btn btn-primary btn-lg btn-block" role="button" aria-pressed="true">Retornar a Productos</a>
+                 <a href="{{url('home') }}" class="btn btn-primary btn-lg btn-block" role="button" aria-pressed="true">Seguir de compras</a>
 
                  <div class="flash-message">
        @foreach (['danger', 'warning', 'success', 'info'] as $msg)
@@ -49,7 +49,7 @@
                         <tbody>
                             <tr>
                                 <th scope="row"> {{$details['name']}}</th>
-                                <td> S./ {{$details['price']}}</th>
+                                <td> ${{$details['price']}}</th>
                                 <td> {{$details['quantity']}}</th>
                                 <td> ${{$details['price']*$details['quantity']}}</th>
                                 <td> <img src="{{$details['photo']}}" width="50" height="50"></th>
@@ -63,9 +63,9 @@
                         <th>
                             <div class="container" class="badge badge-primary text-wrap" style="width: 10rem;">
                     <p></p>
-                    <p>Valor S./{{$valor}}</p>
-                    <p>IVA S./{{$valor*0.19}}</p>
-                    <p>Valot Total S./{{$valor+$valor*0.19}}</p>
+                    <p>Valor ${{$valor}}</p>
+                    <p>IVA ${{$valor*0.19}}</p>
+                    <p>Valot Total ${{$valor+$valor*0.19}}</p>
                     </div>
                     </th>
                     </table>
@@ -75,8 +75,45 @@
                 <a href="{{url('borrar') }}" class="btn btn-warning " role="button" aria-pressed="true">Borrar Productos</a>
                 <div class="alert alert-warning alert-dismissable">
                
-                <a href="{{url('pagar') }}" class="btn btn-success"  role="button" aria-pressed="true">Pagar</a>
 
+               
+
+
+
+<form>
+
+<h2>Complete su Orden</h2>
+<p class="h6">Por favor llene este formulario con sus datos para poder procesar su orden y nuestro equipo pueda ponerse en contacto con usted para la entrega de los articulos</p>
+  <div class="form-group">
+      <label for="validation01">First name</label>
+      <input type="text" class="form-control is-valid" id="validation01" 
+             >
+  </div>
+  <div class="form-group">
+      <label for="validation01">First name</label>
+      <input type="text" class="form-control is-valid" id="validation01" 
+             placeholder="First name" value="Mark" required>
+  </div>
+<div class="form-group">
+      <label for="validation01">First name</label>
+      <input type="text" class="form-control is-valid" id="validation01" 
+             placeholder="First name" value="Mark" required>
+  </div>
+  <div class="form-group">
+      <label for="validation01">First name</label>
+      <input type="text" class="form-control is-valid" id="validation01" 
+             placeholder="First name" value="Mark" required>
+  </div>
+  <div class="form-group">
+      <label for="validation01">First name</label>
+      <input type="text" class="form-control is-valid" id="validation01" 
+             placeholder="First name" value="Mark" required>
+  </div>
+  <a href="{{url('pagar') }}" class="btn btn-success"  role="button" aria-pressed="true">Pagar</a>
+
+</form>
+      
+           
                 
 
                 

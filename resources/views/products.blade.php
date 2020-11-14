@@ -7,6 +7,7 @@
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header">{{ __('Productos') }}</div>
+                <a href="{{url('home/') }}" class="btn btn-primary btn-lg btn-block" role="button" aria-pressed="true">Volver a buscar mas Articulos</a>
                 <a href="{{url('cart/') }}" class="btn btn-primary btn-lg btn-block" role="button" aria-pressed="true">Carrito de Compras</a>
                 <div class="flash-message">
        @foreach (['danger', 'warning', 'success', 'info'] as $msg)
