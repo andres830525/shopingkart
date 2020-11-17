@@ -20,7 +20,13 @@ Route::get('/', function () {
 
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/team', 'HomeController@intro')->name('team');
+Route::get('/mision', 'HomeController@mision')->name('mision');
+Route::get('/vision', 'HomeController@vision')->name('vision');
 Route::get('/products', 'ProductsController@products')->name('products');
+Route::get('/products1', 'ProductsController@products1')->name('products1');
+Route::get('/products2', 'ProductsController@products2')->name('products2');
+Route::get('/products3', 'ProductsController@products3')->name('products3');
 Route::get('product-detail/{id}', 'ProductsController@detail');
 Route::get('/cart', 'ProductsController@cart');
 Route::get('/pagar', 'ProductsController@pagar');

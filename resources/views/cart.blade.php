@@ -33,7 +33,7 @@
                     $valor=0
                     ?>
                     @if(session('cart'))
-                    <table class="table">
+                    <table class="table table-responsive">
                         <thead class="thead-dark">
                             <tr>
                                 <th scope="col">Producto</th>
@@ -85,29 +85,29 @@
 <h2>Complete su Orden</h2>
 <p class="h6">Por favor llene este formulario con sus datos para poder procesar su orden y nuestro equipo pueda ponerse en contacto con usted para la entrega de los articulos</p>
   <div class="form-group">
-      <label for="validation01">First name</label>
+      <label for="validation01">Nombres</label>
       <input type="text" class="form-control is-valid" id="validation01" 
-             >
+             required>
   </div>
   <div class="form-group">
-      <label for="validation01">First name</label>
+      <label for="validation01">Apellidos</label>
       <input type="text" class="form-control is-valid" id="validation01" 
-             placeholder="First name" value="Mark" required>
+             required>
   </div>
 <div class="form-group">
-      <label for="validation01">First name</label>
+      <label for="validation01">Dirrecion</label>
       <input type="text" class="form-control is-valid" id="validation01" 
-             placeholder="First name" value="Mark" required>
+              required>
   </div>
   <div class="form-group">
-      <label for="validation01">First name</label>
+      <label for="validation01">Email</label>
       <input type="text" class="form-control is-valid" id="validation01" 
-             placeholder="First name" value="Mark" required>
+              required>
   </div>
   <div class="form-group">
-      <label for="validation01">First name</label>
+      <label for="validation01">Telefono</label>
       <input type="text" class="form-control is-valid" id="validation01" 
-             placeholder="First name" value="Mark" required>
+              required>
   </div>
   <a href="{{url('pagar') }}" class="btn btn-success"  role="button" aria-pressed="true">Pagar</a>
 

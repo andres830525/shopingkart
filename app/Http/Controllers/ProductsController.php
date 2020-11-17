@@ -12,6 +12,23 @@ class ProductsController extends Controller
     return view('products',compact('products'));
    }
    
+
+   public function products1(){
+    $products = Product::where("category","1")->paginate(10);
+    return view('products',compact('products'));
+   }
+
+   public function products2(){
+    $products = Product::where("category","2")->paginate(10);
+    return view('products',compact('products'));
+   }
+
+   public function products3(){
+    $products = Product::where("category","3")->paginate(10);
+    return view('products',compact('products'));
+   }
+
+
    public function detail($id){
     $product = Product::find($id);
     return view('detail')->with('product',$product);
@@ -23,7 +40,7 @@ class ProductsController extends Controller
    }
 
    public function pagar(){
-    session()->flash('alert-success', 'Gracias por su compra hemos Confirmado su pago!');
+    session()->flash('alert-success', 'Gracias por su compra en unos minutos nos pondremos en contacto con usted para coordinar y Confirmar su pago!');
    
     return view('cart');
    }
