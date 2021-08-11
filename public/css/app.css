@@ -64,6 +64,10 @@ section {
   display: block;
 }
 
+.card-header {
+    text-align: center;
+    }
+
 body {
   margin: 0;
   font-family: "Nunito", sans-serif;
@@ -83,10 +87,6 @@ hr {
   box-sizing: content-box;
   height: 0;
   overflow: visible;
-}
-
-.container{
-  text-align:center
 }
 
 h1,
@@ -4506,6 +4506,7 @@ input[type=button].btn-block {
   align-items: center;
   justify-content: space-between;
   padding: 0.5rem 1rem;
+  margin-bottom: 0;
 }
 
 .navbar .container,
@@ -8626,10 +8627,10 @@ button.bg-dark:focus {
   padding: 1.5rem !important;
 }
 
-.pt-4,
+/*.pt-4,
 .py-4 {
   padding-top: 1.5rem !important;
-}
+}*/
 
 .pr-4,
 .px-4 {
@@ -10905,5 +10906,5 @@ a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6;
   }
-}
+
 

@@ -6,3 +6,16 @@
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+
+
+// Global styles which apply to all pages
+@import 'global';
+
+
+// Custom
+@import 'indexcontent';
+@import 'indexheader';
+
+// Swiper
+@import '~swiper/swiper.scss';
+@import '~swiper/swiper-bundle.css';

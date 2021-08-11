@@ -5,8 +5,36 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="./img/img7.jpg" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="./img/img8.jpg" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="./img/img9.jpg" alt="Third slide">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
             <div class="card">
-                <div class="card-header">{{ __('Productos') }}</div>
+                <div class="card-header"><h1>Listado de Productos Disponibles</h1></div>
                 <a href="{{url('home/') }}" class="btn btn-primary btn-lg btn-block" role="button" aria-pressed="true">Volver a buscar mas Articulos</a>
                 <a href="{{url('cart/') }}" class="btn btn-primary btn-lg btn-block" role="button" aria-pressed="true">Carrito de Compras</a>
                 <div class="flash-message">
@@ -16,7 +44,7 @@
          <p class="alert alert-{{ $msg }}">{{ Session::get('alert-' . $msg) }} <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a></p>
          @endif
        @endforeach
-     </div> 
+     </div>
                 {{--Agregar Productos--}}
                 <div class="row">
                     @foreach($products as $product)

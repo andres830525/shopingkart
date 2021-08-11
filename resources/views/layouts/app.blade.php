@@ -11,15 +11,19 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
-    
+
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
 
+     <link rel="stylesheet" href="{{asset('css/swiper.min.css')}}">
+     <link rel="stylesheet" href="{{asset('css/estilos.css')}}">
 
-   
+
+  </head>
+
 </head>
 <body>
     <div id="app">
@@ -51,12 +55,13 @@
                                 </li>
                             @endif
                         @else
+
+
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }}
                                 </a>
-
-                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                <div class="dropdown-menu " aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
@@ -79,6 +84,12 @@
         </main>
     </div>
     <script src="{{asset('js/app.js')}}"></script>
+
+
+
+
+
+
 
 </body>
 </html>
