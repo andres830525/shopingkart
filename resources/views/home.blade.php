@@ -23,7 +23,7 @@
       <img class="d-block w-100" src="./img/img5.jpg" alt="Second slide">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="./img/img6.jpg" alt="Third slide">
+      <img class="d-block w-100" src="./img/img6.png" alt="Third slide">
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -41,6 +41,8 @@
                 <a href="{{url('products1') }}" class="btn btn-primary btn-lg btn-block" role="button" aria-pressed="true">1.Productos de Farmacia</a>
                 <a href="{{url('products2') }}" class="btn btn-primary btn-lg btn-block" role="button" aria-pressed="true">2.Productos de Licorera</a>
                 <a href="{{url('products3') }}" class="btn btn-primary btn-lg btn-block" role="button" aria-pressed="true">3.Restaurantes</a>
+                 <a href="{{url('products4') }}" class="btn btn-primary btn-lg btn-block" role="button" aria-pressed="true">4.Leche y derivados lácteos</a>
+
 
                 <div class="card-body">
                     @if (session('status'))

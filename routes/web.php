@@ -27,6 +27,7 @@ Route::get('/products', 'ProductsController@products')->name('products');
 Route::get('/products1', 'ProductsController@products1')->name('products1');
 Route::get('/products2', 'ProductsController@products2')->name('products2');
 Route::get('/products3', 'ProductsController@products3')->name('products3');
+Route::get('/products4', 'ProductsController@products4')->name('products4');
 Route::get('product-detail/{id}', 'ProductsController@detail');
 Route::get('/cart', 'ProductsController@cart');
 Route::get('/pagar', 'ProductsController@pagar');
