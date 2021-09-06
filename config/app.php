@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'HAKESEFLASH'),
+    'name' => env('APP_NAME', 'PlacerDelivery '),
 
     /*
     |--------------------------------------------------------------------------

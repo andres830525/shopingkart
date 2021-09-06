@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>HAKESEFLASH</title>
+        <title>Placer Delivery </title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap" rel="stylesheet">
@@ -81,24 +81,24 @@
 
             <div class="container">
                 <div class="title m-b-mb ">
-                   <div class="center"> 
+                   <div class="center">
                   <img src="/img/logo.jpg" class="img-fluid" alt="Responsive image">
-                  
-                   
+
+
                     </div>
 
-                   
-            
+
+
                 </div>
 
                 <div class="links" text-align="center">
                     <a href="{{url('team') }}">Nuestro Equipo</a>
                     <a href="{{url('mision') }}">Misión</a>
                     <a href="{{url('vision') }}">Visión</a>
-                    
+
                 </div>
 
-                
+
             </div>
         </div>
     </body>
